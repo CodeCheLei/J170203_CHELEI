@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-10-31 18:54:47 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.model.library" table="LIBRARY">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="native" />
+        </id>
+        <property name="libraryName" type="java.lang.String">
+            <column name="libraryName" />
+        </property>
+        <property name="curator" type="java.lang.String">
+            <column name="curator" />
+        </property>
+        <property name="tel" type="java.lang.String">
+            <column name="tel" />
+        </property>
+        <property name="address" type="java.lang.String">
+            <column name="address" />
+        </property>
+        <property name="email" type="java.lang.String">
+            <column name="email" />
+        </property>
+        <property name="url" type="java.lang.String">
+            <column name="url" />
+        </property>
+        <property name="createDate" type="java.lang.String">
+            <column name="createDate" />
+        </property>
+        <property name="introduce" type="java.lang.String">
+            <column name="introduce" />
+        </property>
+    </class>
+</hibernate-mapping>

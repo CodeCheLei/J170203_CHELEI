@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <constant name="struts.devMode" value="true" />
+	<package name="action" extends="struts-default" namespace="/">
+		<action name="act1" class="loginAction" method="login">
+			<result name="yes">/index.jsp</result>
+			<result name="no">/login.jsp</result>
+		</action>
+		<action name="act2" class="libraryAction" method="getLibrary">
+			<result name="yes">/libraryinfo.jsp</result>
+		</action>
+		<action name="act3" class="libraryAction" method="update">
+			<result name="yes">/libraryinfo.jsp</result>
+		</action>
+		<action name="act4" class="parameterAction" method="getParameter">
+		</action>
+		<action name="act5" class="parameterAction" method="updateParameter">
+		</action>
+		<action name="act6" class="bookcaseAction" method="getBookcase">
+			<result name="yes">/bookcase.jsp</result>
+		</action>
+		<action name="act7" class="bookcaseAction" method="addBookcase">
+		</action>
+		<action name="act8" class="bookcaseAction" method="delBookcase">
+		</action>
+		<action name="act9" class="readertypeAction" method="getReadertype">
+			<result name="yes">/readertype.jsp</result>
+		</action>
+		<action name="act10" class="readertypeAction" method="addReadertype">
+		</action>
+		<action name="act11" class="readertypeAction" method="delReadertype">
+		</action>
+		<action name="act12" class="readerAction" method="getReader">
+			<result name="yes">/reader.jsp</result>
+		</action>
+		<action name="act13" class="readerAction" method="addReader">
+		</action>
+		<action name="act14" class="readerAction" method="delReader">
+		</action>
+	</package>
+	
+</struts>
